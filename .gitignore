@@ -1,1 +1,4 @@
-echo proxy.log > .gitignore
+proxy.log
+__pycache__/
+*.pyc
+.env
