@@ -24,18 +24,18 @@ The server acts as an HTTP proxy — it receives requests from the client, forwa
 
 **Start the server:**
 ```bash
-python serv.py <PORT>
+python server.py <PORT>
 ```
 ```bash
-python serv.py 8888
+python server.py 8888
 ```
 
 **Start the client (in a separate terminal):**
 ```bash
-python cli.py <server_machine> <server_port>
+python client.py <server_machine> <server_port>
 ```
 ```bash
-python cli.py localhost 8888
+python client.py localhost 8888
 ```
 
 ---
@@ -98,7 +98,7 @@ cd HTTP-proxy
 
 2. Run the client pointed at the EC2 server:
 ```bash
-python cli.py 3.15.16.52 8888
+python client.py 3.15.16.52 8888
 ```
 
 3. Use the interactive prompt:
@@ -119,7 +119,7 @@ No setup required on your end — the server is already running in the cloud.
 | Instance type | t2.micro (free tier) |
 | OS | Ubuntu 22.04 |
 | Port | 8888 (open to 0.0.0.0/0) |
-| Server command | `python3 serv.py 8888` |
+| Server command | `python3 server.py 8888` |
 
 ---
 
@@ -127,7 +127,7 @@ No setup required on your end — the server is already running in the cloud.
 
 ```
 HTTP-proxy/
-├── serv.py      # Proxy server — binds, listens, forwards requests
-├── cli.py       # Interactive client — connects and sends commands
+├── server.py      # Proxy server — binds, listens, forwards requests
+├── client.py       # Interactive client — connects and sends commands
 └── test.py      # Automated test suite
 ```
