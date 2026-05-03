@@ -2,6 +2,12 @@
 
 A simplified FTP-style client-server application built with Python using TCP sockets. The client connects to a proxy server and supports uploading, downloading, and listing content over HTTP.
 
+Made by:
+Alex Zhou @notuohz
+Hunter Tran @HunterTran10
+Stav Sendrovitz  @10stav
+Owen Keyser @OwenKeyser
+
 ---
 
 ## How It Works
