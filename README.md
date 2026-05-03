@@ -84,7 +84,7 @@ The test suite covers:
 
 ## Cloud Deployment
 
-The server is deployed on an **AWS EC2 instance** (Ubuntu, t2.micro).
+The server is deployed on an **AWS EC2 instance** (Ubuntu, t3.micro).
 
 **Live server:** `3.15.16.52:8888`
 
@@ -116,7 +116,7 @@ No setup required on your end — the server is already running in the cloud.
 |---|---|
 | Platform | Amazon Web Services (AWS) |
 | Service | EC2 (Elastic Compute Cloud) |
-| Instance type | t2.micro (free tier) |
+| Instance type | t3.micro (free tier) |
 | OS | Ubuntu 22.04 |
 | Port | 8888 (open to 0.0.0.0/0) |
 | Server command | `python3 server.py 8888` |
